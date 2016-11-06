@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ShellsConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                     xmlns="http://schemas.qualisystems.com/ResourceManagement/ShellsConfigurationSchema.xsd">
+    <ResourceTemplates>
+        <ResourceTemplate Name="Ixia IxNetwork" Model="Ixia IxNetwork" Driver="Ixia IxNetwork Driver">
+            <Description/>
+            <AutoLoad Enable="false">
+                <Description>Description for autoload</Description>
+            </AutoLoad>
+            <Attributes/>
+        </ResourceTemplate>
+    </ResourceTemplates>
+</ShellsConfiguration>

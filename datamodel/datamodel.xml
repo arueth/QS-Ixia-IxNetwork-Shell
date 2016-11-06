@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataModelInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               xmlns="http://schemas.qualisystems.com/ResourceManagement/DataModelSchema.xsd">
+    <Attributes>
+        <AttributeInfo Name="API Address" Type="String" DefaultValue="127.0.0.1" IsReadOnly="false">
+            <Rules>
+                <Rule Name="Configuration"/>
+            </Rules>
+        </AttributeInfo>
+        <AttributeInfo Name="API Port" Type="Numeric" DefaultValue="8009" IsReadOnly="false">
+            <Rules>
+                <Rule Name="Configuration"/>
+            </Rules>
+        </AttributeInfo>
+    </Attributes>
+    <ResourceFamilies>
+        <ResourceFamily Name="Ixia Application" IsConnectable="false" IsLockedByDefault="false" Description=""
+                        IsSearchable="true" ResourceType="Resource">
+            <AttachedAttributes/>
+            <AttributeValues/>
+            <Models/>
+            <Categories/>
+        </ResourceFamily>
+        <ResourceFamily Name="Ixia License" IsConnectable="false" IsLockedByDefault="true" Description=""
+                        IsSearchable="true" ResourceType="Resource">
+            <AttachedAttributes/>
+            <AttributeValues/>
+            <Models>
+                <ResourceModel Name="Ixia IxNetwork License" Description="" SupportsConcurrentCommands="false">
+                    <AttachedAttributes/>
+                    <AttributeValues/>
+                    <ParentModels/>
+                    <Drivers/>
+                    <Scripts/>
+                </ResourceModel>
+            </Models>
+            <Categories/>
+        </ResourceFamily>
+    </ResourceFamilies>
+    <DriverDescriptors>
+        <DriverDescriptor Name="Ixia IxNetwork Driver" DriverType="PythonDriver"/>
+    </DriverDescriptors>
+</DataModelInfo>

@@ -1,0 +1,25 @@
+<Shell>
+    <ShellAttributes>
+    </ShellAttributes>
+    <ShellModel Family="Ixia Application">
+        <ResourceModel Name="Ixia IxNetwork" Description="" SupportsConcurrentCommands="true">
+            <AttachedAttributes>
+                <AttachedAttribute Name="API Address" IsOverridable="true" IsLocal="true">
+                    <AllowedValues/>
+                </AttachedAttribute>
+                <AttachedAttribute Name="API Port" IsOverridable="true" IsLocal="true">
+                    <AllowedValues/>
+                </AttachedAttribute>
+            </AttachedAttributes>
+            <AttributeValues>
+                <AttributeValue Name="API Address" Value="127.0.0.1"/>
+                <AttributeValue Name="API Port" Value="8009"/>
+            </AttributeValues>
+            <ParentModels/>
+            <Drivers>
+                <DriverName>Ixia IxNetwork Driver</DriverName>
+            </Drivers>
+            <Scripts/>
+        </ResourceModel>
+    </ShellModel>
+</Shell>

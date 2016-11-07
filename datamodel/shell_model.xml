@@ -10,10 +10,14 @@
                 <AttachedAttribute Name="API Port" IsOverridable="true" IsLocal="true">
                     <AllowedValues/>
                 </AttachedAttribute>
+                <AttachedAttribute Name="API Version" IsOverridable="true" IsLocal="true">
+                    <AllowedValues/>
+                </AttachedAttribute>
             </AttachedAttributes>
             <AttributeValues>
-                <AttributeValue Name="API Address" Value="127.0.0.1"/>
+                <AttributeValue Name="API Address" Value=""/>
                 <AttributeValue Name="API Port" Value="8009"/>
+                <AttributeValue Name="API Version" Value="8.10"/>
             </AttributeValues>
             <ParentModels/>
             <Drivers>

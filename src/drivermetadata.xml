@@ -1,3 +1,33 @@
 <Driver Description="Describe the purpose of your CloudShell shell" MainClass="driver.IxiaIxNetworkDriver"
         Name="Ixia IxNetwork Driver" Version="1.0.0">
+    <Layout>
+        <Category Name="Configuration">
+            <Command Description="Add chassis to IxNetwork configuration" DisplayName="Add Chassis" Name="add_chassis">
+                <Parameters>
+                    <Parameter Name="chassis_address" Type="String" Mandatory="True" DefaultValue=""
+                               DisplayName="Chassis Address" Description="Address of chassis"/>
+                </Parameters>
+            </Command>
+            <Command Description="Set the license server" DisplayName="Set License Server" Name="set_license_server">
+                <Parameters>
+                    <Parameter Name="license_server_address" Type="String" Mandatory="True" DefaultValue=""
+                               DisplayName="License Server Address" Description="Address of license server"/>
+                </Parameters>
+            </Command>
+            <Command Description="Add a card to the chassis configuration" DisplayName="Add Card To Chassis"
+                     Name="add_card">
+                <Parameters>
+                    <Parameter Name="card_address" Type="String" Mandatory="True" DefaultValue=""
+                               DisplayName="Card Address"
+                               Description="Address of card to be added"/>
+                    <Parameter Name="num_ports" Type="String" Mandatory="True" DefaultValue="1"
+                               DisplayName="Number of Ports" Description="Number of ports on the card"/>
+                </Parameters>
+            </Command>
+        </Category>
+        <Category Name="Orchestration">
+            <Command Description="Configure the chassis via resources in the sandbox"
+                     DisplayName="Configure via Sandbox" Name="configure_via_sandbox"/>
+        </Category>
+    </Layout>
 </Driver>
